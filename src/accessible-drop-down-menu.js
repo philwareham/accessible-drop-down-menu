@@ -62,11 +62,11 @@ $(function ()
 		mainMenuLink.keydown(function (e)
 		{
 			// left arrow key
-			if (e.keyCode == 37)
+			if (e.keyCode === 37)
 			{
 				e.preventDefault();
 				// is this the first primary item?
-				if ($(this).parent('li').prev('li').length == 0)
+				if ($(this).parent('li').prev('li').length === 0)
 				{
 					$(this).parents('ul').find('> li').last().find('a').first().focus();
 				}
@@ -80,11 +80,11 @@ $(function ()
 			}
 
 			// right arrow key
-			else if (e.keyCode == 39)
+			else if (e.keyCode === 39)
 			{
 				e.preventDefault();
 				// is this the last primary item?
-				if ($(this).parent('li').next('li').length == 0)
+				if ($(this).parent('li').next('li').length === 0)
 				{
 					$(this).parents('ul').find('> li').first().find('a').first().focus();
 				}
@@ -98,7 +98,7 @@ $(function ()
 			}
 
 			// up arrow key
-			else if (e.keyCode == 38)
+			else if (e.keyCode === 38)
 			{
 				e.preventDefault();
 				if ($(this).next('ul').length > 0)
@@ -111,7 +111,7 @@ $(function ()
 			}
 
 			// down arrow key
-			else if (e.keyCode == 40)
+			else if (e.keyCode === 40)
 			{
 				e.preventDefault();
 				if ($(this).next('ul').length > 0)
@@ -124,7 +124,7 @@ $(function ()
 			}
 
 			// enter key (13) and space key (32)
-			else if (e.keyCode == 13 || e.keyCode == 32)
+			else if (e.keyCode === 13 || e.keyCode === 32)
 			{
 				// if submenu is hidden, open it
 				e.preventDefault();
@@ -135,7 +135,7 @@ $(function ()
 			}
 
 			// esc key
-			else if (e.keyCode == 27)
+			else if (e.keyCode === 27)
 			{
 				e.preventDefault();
 				$('.menu-open')
@@ -149,7 +149,7 @@ $(function ()
 		subMenuLink.keydown(function (e)
 		{
 			// left arrow key
-			if(e.keyCode == 37)
+			if(e.keyCode === 37)
 			{
 				e.preventDefault();
 				$(this)
@@ -161,7 +161,7 @@ $(function ()
 			}
 
 			// right arrow key
-			else if(e.keyCode == 39)
+			else if(e.keyCode === 39)
 			{
 				e.preventDefault();
 				$(this)
@@ -173,11 +173,11 @@ $(function ()
 			}
 
 			// up arrow key
-			else if(e.keyCode == 38)
+			else if(e.keyCode === 38)
 			{
 				e.preventDefault();
 				// is this the first secondary item?
-				if ($(this).parent('li').prev('li').length == 0)
+				if ($(this).parent('li').prev('li').length === 0)
 				{
 					$(this).parents('ul').parents('li').find('a').first().focus();
 				}
@@ -188,11 +188,11 @@ $(function ()
 			}
 
 			// down arrow key
-			else if(e.keyCode == 40)
+			else if(e.keyCode === 40)
 			{
 				e.preventDefault();
 				// is this the last secondary item?
-				if ($(this).parent('li').next('li').length == 0)
+				if ($(this).parent('li').next('li').length === 0)
 				{
 					$(this).parents('ul').parents('li').find('a').first().focus();
 				}
@@ -203,7 +203,7 @@ $(function ()
 			}
 
 			// esc key
-			else if(e.keyCode == 27)
+			else if(e.keyCode === 27)
 			{
 				e.preventDefault();
 				$(this)
@@ -215,7 +215,7 @@ $(function ()
 			}
 
 			// space key
-			else if(e.keyCode == 32)
+			else if(e.keyCode === 32)
 			{
 				e.preventDefault();
 				$(this).click();
@@ -225,7 +225,7 @@ $(function ()
 		// hide menu if focus moves out of navigation via tab key
 		mainMenu.keydown(function (e)
 		{
-			if (e.keyCode == 9)
+			if (e.keyCode === 9)
 			{
 				$('.menu-open')
 					.attr({'aria-expanded': 'false', 'aria-hidden': 'true'})
