@@ -1,3 +1,10 @@
+/**
+ * accessible-drop-down-menu.js - WAI-ARIA drop-down menu
+ *
+ * @link    https://github.com/philwareham/accessible-drop-down-menu
+ * @license MIT
+ */
+
 $(function ()
 {
 	// dropdown menus
