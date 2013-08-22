@@ -2,4 +2,23 @@ h1. Accessible Drop Down Menu
 
 !https://travis-ci.org/philwareham/accessible-drop-down-menu.png?branch=master!:https://travis-ci.org/philwareham/accessible-drop-down-menu
 
-WAI-ARIA drop drop menu example
+WAI-ARIA drop-down menu example.
+
+h2. Install
+
+Using "Bower":http://bower.io:
+
+bc. $ bower install accessible-drop-down-menu
+
+h2. Build
+
+accessible-drop-down-menu.js uses "Grunt":http://gruntjs.com to run tasks. First make sure that you have all base dependencies installed by running npm in the repository's directory:
+
+bc. $ cd accessible-drop-down-menu
+$ npm install
+
+After you have installed all dependencies, you will be able to run tasks using Grunt, like building and testing:
+
+bc. $ grunt [task]
+
+Where the @[task]@ is one of @watch@, @test@, @build@ or @release[:patch | :minor | :major]@.
