@@ -5,7 +5,6 @@ module.exports = function (grunt)
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.loadNpmTasks('grunt-contrib-qunit');
     grunt.loadNpmTasks('grunt-contrib-compress');
     grunt.loadNpmTasks('grunt-bumpup');
     grunt.loadNpmTasks('grunt-tagrelease');
@@ -64,13 +63,6 @@ module.exports = function (grunt)
             }
         },
 
-        qunit: {
-            options: {
-                timeout: 60000
-            },
-            all: ['test/*.html']
-        },
-
         bumpup: {
             files: ['package.json', 'bower.json']
         },
@@ -124,7 +116,7 @@ module.exports = function (grunt)
         grunt.task.run('tagrelease');
     });
 
-    grunt.registerTask('test', ['jshint', 'qunit']);
+    grunt.registerTask('test', ['jshint']);
     grunt.registerTask('build', ['uglify']);
     grunt.registerTask('default', ['test', 'build']);
     grunt.registerTask('travis', ['jshint', 'qunit', 'build']);
