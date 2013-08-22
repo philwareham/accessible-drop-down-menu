@@ -1,3 +1,5 @@
 h1. Accessible Drop Down Menu
 
+!https://travis-ci.org/philwareham/accessible-drop-down-menu.png?branch=master!:https://travis-ci.org/philwareham/accessible-drop-down-menu
+
 WAI-ARIA drop drop menu example
