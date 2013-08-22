@@ -1,0 +1,41 @@
+{
+    "name": "accessible-drop-down-menu",
+    "title": "accessible-drop-down-menu.js",
+    "description": "",
+    "version": "0.0.0",
+    "homepage": "https://github.com/philwareham/accessible-drop-down-menu",
+    "author": {
+        "name": "Phil Wareham",
+        "url": "http://twitter.com/philwareham"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/philwareham/accessible-drop-down-menu"
+    },
+    "bugs": {
+        "url": "https://github.com/philwareham/accessible-drop-down-menu/issues"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/philwareham/accessible-drop-down-menu/blob/master/LICENSE"
+        }
+    ],
+    "devDependencies": {
+        "grunt": "0.4.1",
+        "grunt-cli": "~0.1",
+        "grunt-contrib-uglify": "0.2.2",
+        "grunt-contrib-jshint": "0.6.2",
+        "grunt-contrib-watch": "~0.4.4",
+        "grunt-contrib-qunit": "0.2.2",
+        "grunt-bumpup": "0.2.0",
+        "grunt-tagrelease": "0.2.0",
+        "grunt-contrib-compress": "0.5.2"
+    },
+    "keywords": [
+        "jquery"
+    ],
+    "scripts": {
+        "test": "grunt travis --verbose"
+    }
+}
