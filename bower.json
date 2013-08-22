@@ -1,0 +1,12 @@
+{
+    "name": "accessible-drop-down-menu",
+    "version": "0.0.0",
+    "main": "src/dropdown.js",
+    "ignore": [
+        ".*",
+        "test"
+    ],
+    "dependencies": {
+        "jquery": ">=1.7.0"
+    }
+}
