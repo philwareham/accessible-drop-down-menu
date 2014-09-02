@@ -1,6 +1,6 @@
 {
   "name": "accessible-drop-down-menu",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "src/accessible-drop-down-menu.js",
   "ignore": [
     ".*",
