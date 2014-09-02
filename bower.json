@@ -1,12 +1,12 @@
 {
-    "name": "accessible-drop-down-menu",
-    "version": "0.1.0",
-    "main": "src/accessible-drop-down-menu.js",
-    "ignore": [
-        ".*",
-        "test"
-    ],
-    "dependencies": {
-        "jquery": ">=1.10.2"
-    }
+  "name": "accessible-drop-down-menu",
+  "version": "0.1.0",
+  "main": "src/accessible-drop-down-menu.js",
+  "ignore": [
+    ".*",
+    "test"
+  ],
+  "dependencies": {
+    "jquery": ">=1.10.2"
+  }
 }

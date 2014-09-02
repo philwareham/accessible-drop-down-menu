@@ -2,12 +2,12 @@ module.exports = function (grunt)
 {
     'use strict';
 
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.loadNpmTasks('grunt-contrib-compress');
     grunt.loadNpmTasks('grunt-bumpup');
-    grunt.loadNpmTasks('grunt-tagrelease');
+    grunt.loadNpmTasks('grunt-contrib-compress');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-release');
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -116,8 +116,8 @@ module.exports = function (grunt)
         grunt.task.run('tagrelease');
     });
 
-    grunt.registerTask('test', ['jshint']);
     grunt.registerTask('build', ['uglify']);
     grunt.registerTask('default', ['test', 'build']);
+    grunt.registerTask('test', ['jshint']);
     grunt.registerTask('travis', ['jshint', 'build']);
 };
